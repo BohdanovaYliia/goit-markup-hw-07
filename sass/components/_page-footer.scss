@@ -1,0 +1,34 @@
+/* стили подвала */
+.page-footer {
+    background-color: $secondary-bg-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__logo {
+        color: $primary-white-color;
+    }
+}
+
+.footer-blocks {
+    display: flex;
+    align-items: baseline;
+}
+
+.contacts-block {
+    flex-grow: 1;
+}
+
+.footer-networks {
+    margin-left: 70px;
+}
+
+.footer-subtitle {
+    margin-bottom: 20px;
+
+    color: $primary-white-color;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+

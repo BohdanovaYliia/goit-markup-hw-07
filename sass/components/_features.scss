@@ -1,0 +1,40 @@
+/* стили особенностей Студии */
+.features-list {
+    display: flex;
+
+    &__item {
+        width: 270px;
+    }
+
+    &__item + &__item {
+        margin-left: $card-set-gap;
+    }
+
+    &__icon {
+        @include centered-flex ();
+
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+
+        background-color: $other-bg-color;
+        border-radius: 4px;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        color: $title-text-color;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+
+    &__text {
+        letter-spacing: 0.03em;
+    }
+
+}

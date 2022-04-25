@@ -1,0 +1,39 @@
+.network-list {
+    @include centered-flex ();
+
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+
+    &__item + &__item {
+        margin-left: 10px;
+    }
+}
+
+.network-list__icon {
+    fill: currentColor;
+
+    &--light {
+        fill: $primary-white-color;
+    }
+}
+
+.network-list__link {
+    @include centered-flex ();
+    
+    width: 44px;
+    height: 44px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $icon-color-standart;
+    border-radius: 50%;
+
+    transition: color $transition-duration $transition-timing-function,
+        background-color $transition-duration $transition-timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $primary-white-color;
+    }
+}

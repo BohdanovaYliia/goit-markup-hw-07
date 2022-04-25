@@ -1,0 +1,17 @@
+.logo {
+    color: $title-text-color;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    transition: color $transition-duration $transition-timing-function;
+
+    &--accent,
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}

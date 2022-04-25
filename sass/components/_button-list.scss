@@ -1,0 +1,9 @@
+.button-list {
+    @include centered-flex ();
+    margin-bottom: 50px;
+
+
+    &__item + &__item {
+        margin-left: 8px;
+    }
+}
