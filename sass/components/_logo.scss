@@ -9,7 +9,7 @@
 
     transition: color $transition-duration $transition-timing-function;
 
-    &--accent,
+    &__accent,
     &:hover,
     &:focus {
         color: $accent-color;

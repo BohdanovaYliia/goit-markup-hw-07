@@ -2,10 +2,10 @@
 
 .clients-list {
     @include centered-flex ();
+}
 
-    &__item + &__item {
-        margin-left: $card-set-gap;
-    }
+.clients-list__item + .clients-list__item {
+    margin-left: $card-set-gap;
 }
 
 .clients-list__link {

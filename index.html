@@ -20,12 +20,12 @@
   <body>
     <!-- Хедер -->
     <header class="page-header">
-      <div class="blocks-wrap container">
+      <div class="container page-header__container">
         <nav class="blocks-wrap">
           <a href="./index.html" lang="en" class="logo">
-            <span class="logo--accent">Web</span>Studio</a
+            <span class="logo__accent">Web</span>Studio</a
           >
-          <ul class="site-nav list">
+          <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
             </li>
@@ -36,7 +36,7 @@
           </ul>
         </nav>
 
-        <ul class="contacts-header list">
+        <ul class="contacts-header">
           <li class="contacts-header__item">
             <a href="mailto:info@devstudio.com" class="contacts-header__link">
               <svg width="16px" height="12px" class="contacts-header__icon">
@@ -76,9 +76,9 @@
           <!-- этот заголовок невидимый -->
           <h2 class="section__title visually-hidden">Особенности</h2>
 
-          <ul class="features-list list">
+          <ul class="features-list">
             <li class="features-list__item">
-              <div class="features-list__icon">
+              <div class="features-list__icon-box">
                 <svg width="70px" height="70px">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -89,7 +89,7 @@
               </p>
             </li>
             <li class="features-list__item">
-              <div class="features-list__icon">
+              <div class="features-list__icon-box">
                 <svg width="70px" height="70px">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -100,7 +100,7 @@
               </p>
             </li>
             <li class="features-list__item">
-              <div class="features-list__icon">
+              <div class="features-list__icon-box">
                 <svg width="70px" height="70px">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -111,7 +111,7 @@
               </p>
             </li>
             <li class="features-list__item">
-              <div class="features-list__icon">
+              <div class="features-list__icon-box">
                 <svg width="70px" height="70px">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -126,11 +126,11 @@
       </section>
 
       <!-- Чем мы занимаемся -->
-      <section class="works section">
+      <section class="section section--no-padding-top">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
 
-          <ul class="works-list list">
+          <ul class="works-list">
             <li class="works-list__item">
               <img src="./images/box1.jpg" alt="Работа с схемами" width="370" height="294" />
               <p class="works-list__text">Десктопные приложения</p>
@@ -148,17 +148,17 @@
       </section>
 
       <!-- Наша команда -->
-      <section class="team section">
+      <section class="section section--other-bg">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
 
-          <ul class="team-list list">
+          <ul class="team-list">
             <li class="team-list__item">
               <img src="./images/worker1.jpg" alt="Работник первый" width="270" height="260" />
               <div class="team-list__content">
-                <h3 class="team-list__name">Игорь Демьяненко</h3>
+                <h3 class="team-list__title">Игорь Демьяненко</h3>
                 <p lang="en" class="team-list__text">Product Designer</p>
-                <ul class="network-list list">
+                <ul class="network-list">
                   <li class="network-list__item">
                     <a href="" class="network-list__link">
                       <svg width="20px" height="20px" class="network-list__icon">
@@ -193,9 +193,9 @@
             <li class="team-list__item">
               <img src="./images/worker2.jpg" alt="Работник второй" width="270" height="260" />
               <div class="team-list__content">
-                <h3 class="team-list__name">Ольга Репина</h3>
+                <h3 class="team-list__title">Ольга Репина</h3>
                 <p lang="en" class="team-list__text">Frontend Developer</p>
-                <ul class="network-list list">
+                <ul class="network-list">
                   <li class="network-list__item">
                     <a href="" class="network-list__link">
                       <svg width="20px" height="20px" class="network-list__icon">
@@ -230,9 +230,9 @@
             <li class="team-list__item">
               <img src="./images/worker3.jpg" alt="Работник третий" width="270" height="260" />
               <div class="team-list__content">
-                <h3 class="team-list__name">Николай Тарасов</h3>
+                <h3 class="team-list__title">Николай Тарасов</h3>
                 <p lang="en" class="team-list__text">Marketing</p>
-                <ul class="network-list list">
+                <ul class="network-list">
                   <li class="network-list__item">
                     <a href="" class="network-list__link">
                       <svg width="20px" height="20px" class="network-list__icon">
@@ -267,9 +267,9 @@
             <li class="team-list__item">
               <img src="./images/worker4.jpg" alt="Работник четвертый" width="270" height="260" />
               <div class="team-list__content">
-                <h3 class="team-list__name">Михаил Ермаков</h3>
+                <h3 class="team-list__title">Михаил Ермаков</h3>
                 <p lang="en" class="team-list__text">UI Designer</p>
-                <ul class="network-list list">
+                <ul class="network-list">
                   <li class="network-list__item">
                     <a href="" class="network-list__link">
                       <svg width="20px" height="20px" class="network-list__icon">
@@ -307,10 +307,10 @@
     </main>
 
     <!-- Постоянные клиенты -->
-    <section class="clients section">
+    <section class="section">
       <div class="container">
         <h2 class="section__title">Постоянные клиенты</h2>
-        <ul class="clients-list list">
+        <ul class="clients-list">
           <li class="clients-list__item">
             <a href="" class="clients-list__link"
               ><svg width="106px" height="60px">
@@ -362,10 +362,10 @@
       <div class="footer-blocks container">
         <div class="contacts-block">
           <a href="./index.html" lang="en" class="logo page-footer__logo">
-            <span class="logo--accent">Web</span>Studio</a
+            <span class="logo__accent">Web</span>Studio</a
           >
           <address>
-            <ul class="contacts-footer list">
+            <ul class="contacts-footer">
               <li class="contacts-footer__item">
                 <a
                   href="https://goo.gl/maps/sbmDoguWazhmyjEM8"
@@ -385,7 +385,7 @@
         </div>
         <div class="footer-networks">
           <p class="footer-subtitle">присоединяйтесь</p>
-          <ul class="network-list list">
+          <ul class="network-list">
             <li class="network-list__item">
               <a href="" class="network-list__link">
                 <svg width="20px" height="20px" class="network-list__icon--light">

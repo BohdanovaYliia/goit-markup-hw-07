@@ -1,10 +1,10 @@
 .contacts-footer {
     display: inline-block;
     margin-top: 20px;
+}
 
-    &__item + &__item {
-        margin-top: 9px;
-    }
+.contacts-footer__item + .contacts-footer__item {
+    margin-top: 9px;
 }
 
 .contacts-footer__link {
